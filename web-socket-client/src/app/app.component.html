@@ -1,0 +1,6 @@
+<h1>Hello {{title}} !</h1>
+<div>connected: {{connected}}</div>
+<div>connecting: {{connecting}}</div>
+<button [disabled]="connecting" *ngIf="!connected" (click)="connect()">Connect</button>
+<button [disabled]="connecting" *ngIf="connected" (click)="disconnect()">Disconnect</button>
+<div *ngFor="let message of messages">{{message}}</div>
