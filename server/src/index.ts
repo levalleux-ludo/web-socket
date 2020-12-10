@@ -1,7 +1,7 @@
 import * as WebSocket from "ws";
 
 console.log('Hello world!');
-const ws_port = 13370;
+const ws_port = 13380;
 console.log('websocket server listening on port', ws_port);
 const wss = new WebSocket.Server({ port: ws_port });
 let clientId = 1;

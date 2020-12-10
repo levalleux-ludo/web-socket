@@ -1,0 +1,12 @@
+version: '3'
+services:
+
+  web_socket_server:
+    build: .
+    container_name: 'web_socket_server'
+    ports:
+      - '13380:13380'
+    restart: always
+    image: levalleuxludo/my_repo:web_socket_server
+
+
