@@ -1,4 +1,14 @@
 <h1>Hello {{title}} !</h1>
+<div *ngIf="!editing">
+    url: {{ws_url}}<button [disabled]="connecting" (click)="edit()">Edit</button>
+</div>
+<div *ngIf="editing">
+    <input type="text" [value]="ws_url" #url>
+    <button (click)="apply()">Apply</button>
+    <button (click)="cancel()">Cancel</button>
+</div>
+
+<!-- TODO: add a input control visible ony when editing-->
 <div>connected: {{connected}}</div>
 <div>connecting: {{connecting}}</div>
 <button [disabled]="connecting" *ngIf="!connected" (click)="connect()">Connect</button>

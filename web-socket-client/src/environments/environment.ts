@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  ws_url: 'ws://localhost:13380'
+  ws_url: 'wss://ludotest.ddnsfree.com:8443'
 };
 
 /*
