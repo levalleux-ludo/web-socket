@@ -48,6 +48,7 @@ export class AppComponent implements OnInit {
         this.connecting = false;
         resolve();
       }, err => {
+        this.connecting = false;
         this.messages.push(err);
         reject(err);
       });

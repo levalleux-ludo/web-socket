@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  ws_url: 'ws://levalleux.online:13380'
+  ws_url: 'wss://ludotest.ddnsfree.com:8443'
 };
